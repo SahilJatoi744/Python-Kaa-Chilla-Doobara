@@ -1,5 +1,8 @@
-import streamlit as st; import seaborn as sns; import pandas as pd
-import matplotlib.pyplot as plt; import numpy as np; import plotly.express as px
+import streamlit as st
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
@@ -11,18 +14,18 @@ model_training = st.container()
 
 with header:
     st.title('Kashti Dashboard')
-    st.text("This project is about the Kashti data.")
+    st.text('This project is about the "Titanic" dataset.')
     
 with dataset:
     st.header('Dataset')
-    st.text("'Titanic' dataset.")
+    st.text('"Titanic" dataset.')
     # Importing the dataset
     df = sns.load_dataset('titanic')
     # Removing the Nan values
     df = df.dropna()
     
     st.subheader('Dataset')
-    st.write(df.head(2))
+    st.write(df.head(3))
     st.subheader('Dataset Description')
     st.write(df.describe())
     
