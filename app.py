@@ -18,13 +18,12 @@ with header:
     
 with dataset:
     st.header('Dataset')
-    st.text('"Titanic" dataset.')
     # Importing the dataset
     df = sns.load_dataset('titanic')
-    # Removing the Nan values
+    # Removing the NaN values
     df = df.dropna()
     
-    st.subheader('Dataset preview')
+    st.subheader('Dataset Preview')
     st.write(df.head(3))
     st.subheader('Dataset Description')
     st.write(df.describe())
@@ -41,13 +40,7 @@ with dataset:
     
     st.subheader('Age Distribution - 25 Random Passengers')
     st.bar_chart(df.age.sample(25))    
-    
-# with features:
-#     st.header('App Features :')
-#     st.text('This is the features.')
-#     st.markdown('1. **Features 1:** This is will tell us about the features.')
-#     st.markdown('2. **Features 2:** This is will tell us about the features.')
-    
+        
 with model_training:
     st.header('Kashti Passengers Status - Model Training')
     st.text('This is the model training.')
