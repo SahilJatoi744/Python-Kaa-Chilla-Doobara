@@ -42,11 +42,11 @@ with dataset:
     st.subheader('Age Distribution - 25 Random Passengers')
     st.bar_chart(df.age.sample(25))    
     
-with features:
-    st.header('App Features :')
-    st.text('This is the features.')
-    st.markdown('1. **Features 1:** This is will tell us about the features.')
-    st.markdown('2. **Features 2:** This is will tell us about the features.')
+# with features:
+#     st.header('App Features :')
+#     st.text('This is the features.')
+#     st.markdown('1. **Features 1:** This is will tell us about the features.')
+#     st.markdown('2. **Features 2:** This is will tell us about the features.')
     
 with model_training:
     st.header('Kashti Passengers Status - Model Training')
