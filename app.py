@@ -54,14 +54,8 @@ with model_training:
 # n_estimators
 n_estimators = input.selectbox('How many trees in the forest?', options=[50, 100, 200, 300, 'No Limit'])
 
-# Adding list of columns
-input.write(df.columns)
-
-# Input features from the user
-input_features = input.text_input('Which feature be used?')
-    
 # Defining the X and y
-X = df[input_features].values.reshape(-1, 1)
+X = df['age'].values.reshape(-1, 1)
 y = df['fare'].values.reshape(-1, 1)
 
 # Machine Learning Model
