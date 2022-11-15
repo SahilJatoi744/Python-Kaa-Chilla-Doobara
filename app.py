@@ -24,7 +24,7 @@ with dataset:
     # Removing the Nan values
     df = df.dropna()
     
-    st.subheader('Dataset')
+    st.subheader('Dataset preview')
     st.write(df.head(3))
     st.subheader('Dataset Description')
     st.write(df.describe())
@@ -72,11 +72,11 @@ X = df[input_features].values.reshape(-1, 1)
 y = df['fare'].values.reshape(-1, 1)
 
 # Machine Learning Model
-model = RandomForestRegressor(n_estimators=n_estimators, max_depth=max_depth, random_state=0)
+model = RandomForestRegressor(n_estimators=n_estimators, max_depth=max_depth)
 
 # Applying condition for the model
 if n_estimators == 'No Limit':
-    model = RandomForestRegressor(max_depth=max_depth, random_state=0)
+    model = RandomForestRegressor(max_depth=max_depth)
 else:
     model = RandomForestRegressor(n_estimators=n_estimators, max_depth=max_depth, random_state=0)
 
