@@ -1,6 +1,6 @@
 # Streamlit Application
-## Video : streamlit Dashboards | Python for Data Science | Day-28/40
-## @48:32 Making a streamlit app and deploying on GitHub
+#### Video : streamlit Dashboards | Python for Data Science | Day-28/40
+#### @48:32 Making and deploying a streamlit app
 
 This repository contains a streamlit application file.
 
